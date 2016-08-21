@@ -285,7 +285,7 @@ header video{min-width:100%; min-height:100%; transform: scale(1.3); float:left;
 
 
 /* NAVIGATION */
-.navbar-default{ height:85px; padding-top:4px; border-radius:0; background:url(http://themezinho.net/sreative/images/rainbow-bar.jpg) top repeat-x; border-bottom:1px solid rgba(255,255,255,0.4);}
+.navbar-default{ height:85px; padding-top:4px; border-radius:0; background:top repeat-x; border-bottom:1px solid rgba(255,255,255,0.4);}
 .navbar-default {-moz-transition: all 0.2s ease; -o-transition: all 0.2s ease; -ms-transition: all 0.2s ease; transition: all 0.2s ease;}
 .navbar-default .navbar-brand{ height:auto;}
 .navbar-default .navbar-brand img{ height:22px; margin-top:15px;}
@@ -302,7 +302,7 @@ header video{min-width:100%; min-height:100%; transform: scale(1.3); float:left;
 .navbar-default .dropdown-menu li{ width:100%; float:left; text-align:right;}
 .navbar-default .dropdown-menu li a{ color:#fff; font-weight:700; border:none !important;}
 .navbar-default .dropdown-menu li a:hover{background:none; opacity:0.8;}
-.fixed-nav{ background:url(http://themezinho.net/sreative/images/rainbow-bar.jpg) top repeat-x rgba(255,255,255,0.92) !important;}
+.fixed-nav{ background:top repeat-x rgba(255,255,255,0.92) !important;}
 .fixed-nav a{color:#febd0e !important;}
 .fixed-nav img{ -webkit-filter: brightness(1) invert(1); filter: brightness(1) invert(1); }
 .fixed-nav .dropdown-menu{ background:#febd0e;}
