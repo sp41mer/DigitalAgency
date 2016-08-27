@@ -20,5 +20,6 @@ from digital import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.index, name='index'),
-    url(r'^about_us/', views.about_us, name = 'about_us')
+    url(r'^about-us/', views.about_us, name = 'about_us'),
+    url(r'^contacts/', views.contacts, name = 'contacts')
 ]
