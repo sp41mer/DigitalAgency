@@ -47,6 +47,7 @@
     }</style>
 </head>
 <body>
+<!-- Прелоадер -->
 <div class="loading yellow-bg">
     <div class="table">
         <div class="inner"><img src="{% static "DigitalAgency/image/logo-light.png" %}" alt="Image">
@@ -58,62 +59,28 @@
     <!-- end table -->
 </div>
 <!-- end loading -->
-<div class="transition-overlay yellow-bg"></div>
-<!-- end transition-overlay -->
-<div class="side-menu"><span class="side-menu-close"><i class="ion-android-close"></i></span>
-    {% include 'content_blocks/quick_contact.html' %}
+<!-- Какая-то непонятная херня-->
+<div class="transition-overlay yellow-bg">
+    <!--ЧТО ТУТ БЛЯТЬ ДОЛЖНО БЫТЬ? -->
 </div>
+<!-- end transition-overlay -->
+<!-- Форма заявки -->
+{% include 'content_blocks/quick_contact.html' %}
 <!-- end side-menu -->
-<header>
-    {% include 'content_blocks/header.html' %}
-    <!-- end nav -->
-    <div class="stage">
-        <!-- СЮДА НАДО ВХУЯРИТЬ КЛЕВУЮ АНИМАШКУ --!>
-        <!-- end slide-content -->
-    </div>
-    <!-- end stage -->
-</header>
+<!-- Первый экран -->
+{% include 'content_blocks/header.html' %}
 <!-- end header -->
-<section class="about-us">
-    {% include 'content_blocks/about_us_block.html' %}
-</section>
-<!-- end about-us -->
-<section class="services wow fadeInUp" style="visibility: hidden; animation-name: none;">
-    {% include 'content_blocks/services_row.html' %}
-</section>
+<!-- Услуги -->
+{% include 'content_blocks/services_row.html' %}
 <!-- end services -->
-<section class="fun-facts wow fadeInUp" style="visibility: hidden; animation-name: none;">
-    {% include 'content_blocks/clients_counter.html' %}
-</section>
-<!-- end fun-facts -->
-<section class="latest-works">
-    {% include 'content_blocks/latest_works_block.html' %}
-</section>
-<!-- end latest works -->
-<section class="logos wow fadeInUp" style="visibility: hidden; animation-name: none;">
-    {% include 'content_blocks/our_clients_block.html' %}
-</section>
-<!-- end logos -->
-<section class="latest-news wow fadeInUp" style="visibility: hidden; animation-name: none;">
-    {% include 'content_blocks/latest_news.html' %}
-</section>
-<!-- end latest-news -->
-<section class="quote wow fadeInUp" data-stellar-background-ratio="0.5"
-         style="visibility: hidden; animation-name: none; background-position: 0% 0%;">
-   {% include 'content_blocks/quote.html' %}
-</section>
+<!-- О нас -->
+{% include 'content_blocks/about_us_block.html' %}
+<!-- end about-us -->
+<!-- Какая-то цитата -->
+{% include 'content_blocks/quote.html' %}
 <!-- end quote -->
-<section class="contact">
-    {% include 'content_blocks/contacts_block.html' %}
-</section>
-<!-- end contact -->
-<footer>
-    {% include 'content_blocks/big_footer.html' %}
-</footer>
-<!-- end footer -->
-<section class="sub-footer">
-    {% include 'content_blocks/small_footer.html' %}
-</section>
+<!-- Маленький футер-->
+{% include 'content_blocks/small_footer.html' %}
 <!-- end sub-footer -->
 
 <!-- JS FILES -->
