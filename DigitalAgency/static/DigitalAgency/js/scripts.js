@@ -20,8 +20,14 @@
 		
 		// Toogle Classes
 		$(".hamburger-menu").click(function() {
-		$(".side-menu").addClass("show-me");
+			$(".side-menu").addClass("show-me");
+			return false;
 		});
+
+		$(".js__quote__contact_button").click(function(){
+			$(".side-menu").addClass("show-me");
+			return false;
+		})
 		
 		$(".side-menu-close").click(function() {
 		$(".side-menu").removeClass("show-me");
