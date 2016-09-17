@@ -54,10 +54,16 @@ MIDDLEWARE_CLASSES = [
 
 ROOT_URLCONF = 'DigitalAgency.urls'
 
+here = lambda * x: os.path.join(os.path.abspath(os.path.dirname(__file__)), *x)
+
+PROJECT_ROOT = here("..")
+
+root = lambda * x: os.path.join(os.path.abspath(PROJECT_ROOT), *x)
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')]
+        'DIRS': [root('templates')]
         ,
         'APP_DIRS': True,
         'OPTIONS': {
@@ -132,5 +138,4 @@ STATICFILES_DIRS = (
 )
 STATIC_URL = '/static/'
 
-TEMPLATE_DEBUG=True
 
