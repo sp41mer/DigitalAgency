@@ -27,7 +27,12 @@
 		$(".js__quote__contact_button").click(function(){
 			$(".side-menu").addClass("show-me");
 			return false;
-		})
+		});
+
+		$(".js__services__contact_button").click(function(){
+			$(".side-menu").addClass("show-me");
+			return false;
+		});
 		
 		$(".side-menu-close").click(function() {
 		$(".side-menu").removeClass("show-me");
@@ -35,7 +40,10 @@
 		
 		
 		// Services Toggles
-		$(".btn1").click(function() {
+		//$(".services .box").click(function(){
+		//	$(this).find("ul").toggleClass("show-me");
+		//});
+		$(".btn1").click(function(e) {
 		$(".services .box .list1").toggleClass("show-me");
 		});
 		

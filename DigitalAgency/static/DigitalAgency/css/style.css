@@ -157,6 +157,12 @@ textarea{ height:120px; padding:10px; border:1px solid #eee;}
 
 /* LINKS */
 a{color:#febd0e;}
+a.services__learn_more{
+	color: #02b7cf;
+	margin-bottom: -7px;
+	margin-right: 24px;
+	float: right;
+}
 a:hover{text-decoration:underline;}
 a:focus{text-decoration:none;}
 
