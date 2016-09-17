@@ -63,7 +63,7 @@ root = lambda * x: os.path.join(os.path.abspath(PROJECT_ROOT), *x)
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [root('templates')]
+        'DIRS': [root('templates'), root('templates/content_blocks')]
         ,
         'APP_DIRS': True,
         'OPTIONS': {
